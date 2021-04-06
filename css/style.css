@@ -1,0 +1,382 @@
+ul{
+	list-style: none;
+	padding: 0px;
+}
+
+.r-tailor-wrapper{
+	margin: auto;
+}
+
+.r-tailor-container{
+	color:white;
+	width: 100%;
+	font-family: Lato;
+	display: inline-flex;
+	/*border-right: 10px solid #2C0136;
+    border-top: 10px solid #2C0136;
+    border-bottom: 10px solid #2C0136;*/
+}
+
+.r-logo{
+	background:black;
+	height: 70px;
+}
+
+.r-preview{
+	width: 300px;
+}
+
+/*Title Suits*/
+.r-preview .r-header{
+	background: white;
+	color: black;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 5px
+}
+
+.r-title{
+	margin: 0px;
+	white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.r-preview{
+	/*float:left;*/
+}
+
+.r-preview .r-title{
+	margin: 0px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.r-preview .r-subtitle{
+	margin: 0px;
+	font-weight: normal;
+	font-size: 14px
+}
+
+.r-preview .r-price{
+	color: #ce0e0e;
+	font-weight: 600;
+	font-size: 15px
+}
+
+.r-preview .r-view{
+	color: #6b6b6b;
+	font-size: 14px;
+	text-transform: none;
+	text-align: right;
+}
+
+.r-preview .r-view a{
+	color: #4c4c4c;
+	text-decoration: none;
+}
+
+.r-preview .r-item{
+	background: transparent !important;
+}
+
+.r-preview .r-item .preview{
+	width: 300px;
+    height: 400px;
+}
+
+
+.r-preview .r-categories{
+	display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+}
+
+.r-preview .r-nav-categories{
+	margin:auto;
+}
+
+.r-preview .r-categories li{
+	position:relative;
+	float:left;
+	border: 2px solid transparent;
+	height: 60px;
+}
+
+.r-preview .r-categories .r-active {
+	border: 2px solid #923ba7;
+}
+
+.r-preview .r-categories li:hover{
+	border: 2px solid #923ba7;
+	cursor: pointer;
+}
+
+.r-preview .r-categories .thumbnail{
+	width: 50px;
+	height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0px;
+}
+
+.r-nav{
+	background: #2C0136;
+	width: 300px;
+	/*float:left;*/
+}
+
+.r-nav .r-title{
+	text-align: center;
+	font-size: 22px;
+	font-weight: 900; 
+	margin-top:10px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.r-nav .r-subtitle{
+	text-align: center;
+	font-size: 14px;
+	font-weight: normal; 
+}
+
+
+.r-nav-list{
+	list-style: none;
+    padding: 0;
+    margin:auto;
+}
+
+.r-nav-list li{
+	line-height: 35px;
+	padding-left: 15px;
+	white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px
+}
+
+.r-nav-list .r-active {
+	background: #4d025f;
+	border-left: 5px solid #923ba7;
+}
+
+.r-nav-list li:hover{
+	background: #4d025f;
+	border-left: 5px solid #923ba7;
+	cursor: pointer;
+}
+
+.r-selection{
+	width: 100%;
+}
+
+.r-select-type .r-title{
+	color:black;
+	margin: 5px;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+.r-select-type ul{
+	margin-top:7px;
+	/* width: 100px */
+}
+
+.r-select-type li{
+	position:relative;
+	float:left;
+	margin-left:5px;
+	border: 3px solid white;
+	height: 40px;
+}
+
+.r-select-type li:hover{
+	border: 3px solid #923ba7;
+	cursor: pointer;
+}
+
+.r-select-type .r-active{
+	border: 3px solid #923ba7;
+}
+
+.r-select-type li .thumbnail{
+	width:50px;
+	height: 40px;
+}
+
+.checked {
+	position: absolute;
+	width:20px;
+	height:20px;
+	top: 0
+}
+
+.r-selection .type{
+	/* margin-top: 65px; */
+}
+
+.r-selection .overflow{
+	overflow: auto;
+	height: 450px;
+}
+
+.r-selection .overflow-x{
+	overflow: auto;
+	 white-space: nowrap;
+}
+
+.r-select-type .fabric{
+	height: 60px;
+}
+
+
+.r-selection .type li{
+	width: auto;
+	margin-left: 20px;
+	height: auto;
+}
+
+.r-selection .type .thumbnail{
+	width: auto;
+	height: auto;
+}
+
+.r-selection .type .none{
+	display: none
+}
+
+.r-selection .type .type-text{
+	color:black;
+	font-size: 15px;
+	white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.r-button {
+  height: 40px;
+  float:right;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.r-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.r-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.r-button:hover span {
+  padding-right: 25px;
+}
+
+.r-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.r-embroidery{
+	color: black;
+	text-align: center;
+}
+.r-embroidery .r-container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.r-embroidery .r-container .r-custom-check {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.r-embroidery .r-checkmark {
+    position: absolute;
+    top: 0;
+    height: 25px;
+    width: 25px;
+    margin-left:10px;
+    background-color: #a7a6a6;
+}
+
+/* On mouse-over, add a grey background color */
+.r-embroidery .r-container:hover .r-custom-check ~ .r-checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.r-embroidery .r-container .r-custom-check:checked ~ .r-checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.r-embroidery .r-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.r-embroidery .r-container .r-custom-check:checked ~ .r-checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.r-embroidery .r-container .r-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.r-embroidery .r-embroidery-img{
+	margin:10px
+}
+
+.r-embroidery .r-custom-text{
+	width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size:17px
+}
+
+.r-embroidery .r-custom-text:focus {
+    background-color: lightblue;
+}

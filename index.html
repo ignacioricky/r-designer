@@ -1,0 +1,126 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+	
+	<div id="-r-tailor"> </div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/r-designer.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		rdesign.addMenuData([
+			{
+				name:'suit',
+				img:"assets/img/suit_front.png",
+				text:'Suit',
+				data:[
+					{value:1,text:'Button',name:'button'},
+					{value:2,text:'Front Pocket',name:'front_pocket'},
+					{value:3,text:'Ticket Pocket',name:'ticket_pocket'},
+					{value:4,text:'Lapel Type',name:'lapel_type'},
+					{value:5,text:'Vent Type',name:'vent_type'},
+					{value:6,text:'Sleeve Buttons',name:'sleeve_buttons'},
+					{value:7,text:'Embroidery',name:'embroidery'},
+					{value:8,text:'Measurements',name:'measurements'}
+				]
+			},
+			{
+				name:'pant',
+				img:"assets/img/pant_front.png",
+				text:'Pant',
+				data:[
+					{value:1,text:'Pleat',name:'button'},
+					{value:2,text:'Back Pockets',name:'front_pocket'},
+					{value:3,text:'Belt Loop',name:'ticket_pocket'},
+					{value:4,text:'Cuffs',name:'lapel_type'}
+				]
+			},
+		]);
+
+		rdesign.addFabricData([
+			{value:1,name:'nito-tisare',img:'assets/img/fabric/Nito-Tisare.jpg',checked:true},
+			{value:2,name:'royal-blue-400',img:'assets/img/fabric/Royal-Blue-400.jpg'},
+			{value:3,name:'royal-blue-505',img:'assets/img/fabric/Royal-Blue-505.jpg'},
+			{value:4,name:'royal-blue-1900',img:'assets/img/fabric/Royal-Blue-1900.jpg'}
+		]);
+
+		rdesign.addType([
+			{
+				img:"assets/img/suit_front.png",
+				checked:true,
+				name:"suit",
+				data:[
+					{
+						name:'button',
+						data: [
+							{
+								value:1,
+								checked:true,
+								img:'assets/img/buttons/one_button_jacket.jpg',
+								text:'One Button Jacket'
+							},
+							{
+								value:2,
+								img:'assets/img/buttons/two_button_jacket.jpg',
+								text:'Two Button Jacket'
+							},
+							{
+								value:3,
+								img:'assets/img/buttons/three_button_jacket.jpg',
+								text:'Three Button Jacket'
+							},
+							{
+								value:4,
+								img:'assets/img/buttons/forth_button_jacket.jpg',
+								text:'Four Button Jacket'
+							}
+						],
+					},
+					{
+						name:"front_pocket",
+						data:[
+							{
+								value:1,
+								checked:true,
+								img:'assets/img/front_pocket/none.jpg',
+								text:'None'
+							},
+							{
+								value:2,
+								img:'assets/img/front_pocket/normal_pocket.jpg',
+								text:'Normal Pocket'
+							},
+							{
+								value:3,
+								img:'assets/img/front_pocket/with_flap.jpg',
+								text:'With Flap'
+							}
+						]
+					}
+				]
+			},
+			{
+				img:"assets/img/pant_front.png",
+				name:"pant"
+			}
+		]);
+
+		rdesign.init("-r-tailor");
+
+		rdesign.submitBtn.click(function(){
+			console.log(rdesign.getData());
+		})
+
+
+	});
+
+</script>
+
+</body>
+
+</html>

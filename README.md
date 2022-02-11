@@ -1,4 +1,4 @@
-# r-designer
+# r-designer - CODE UPDATED SINCE 2017
 
 r-designer simple plugin to help you manage and choose your suit and pants
 
